@@ -1,6 +1,6 @@
 {
   "name": "tracking",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Careship inhouse tracking library",
   "scripts": {
     "test": "jest",
