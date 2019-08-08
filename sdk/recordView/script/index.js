@@ -1,4 +1,4 @@
-import record from "./record";
+import record from "../record";
 
 const apiBaseUrl = window.trackingApiBaseUrl;
 
