@@ -25,7 +25,7 @@ export function record(baseUrl, hostName, pagePath, urlParameters) {
 
 function sendMetrics(client, hostName, pagePath, urlParameters) {
     const payload = buildPayload(hostName, pagePath, urlParameters)
-    client.post('/tracking/record-view', payload)
+    client.post('/record-view', payload)
 }
 
 function buildPayload(hostName, pagePath, urlParameters) {
