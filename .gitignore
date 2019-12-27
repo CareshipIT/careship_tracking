@@ -1,3 +1,6 @@
+#ide
+.idea
+
 package-lock.json
 sdk/recordView/script/dist
 

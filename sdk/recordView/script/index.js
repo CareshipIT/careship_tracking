@@ -1,9 +1,9 @@
 import record from "../record";
+import clickTracking from "../clickTracking";
+import {URL} from "../../../lib/utils"
 
-const apiBaseUrl = window.trackingApiBaseUrl;
+const currentUrl = URL(window.location.href);
+const apiBaseUrl = window.trackingApiBaseUrl || `${currentUrl.protocol}://${currentUrl.hostname}/acquisition/tracking`;
 
-const hostName = window.location.hostname
-const pathName = window.location.pathname
-const urlParameters = window.location.search + window.location.hash
-
-record(apiBaseUrl, hostName, pathName, urlParameters)
+record(apiBaseUrl, currentUrl.hostname, currentUrl.pathname, currentUrl.searchParams + currentUrl.hash);
+clickTracking(apiBaseUrl).recordClick();
