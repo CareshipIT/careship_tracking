@@ -1,5 +1,5 @@
 {
-  "name": "tracking",
+  "name": "careship_tracking",
   "version": "2.1.0",
   "description": "Careship inhouse tracking library",
   "scripts": {
@@ -11,7 +11,6 @@
     "type": "git",
     "url": "git+ssh://git@github.com/CareshipIT/tracking.git"
   },
-  "private": true,
   "dependencies": {
     "axios": "^0.19.0",
     "browser-cookies": "^1.2.0",
